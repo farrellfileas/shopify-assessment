@@ -19,7 +19,7 @@
         let search = e.target.value;
         searchTitle.textContent = search;
 
-        fetch(`http://www.omdbapi.com/?s=${search}&type=movie&apikey=c26d67ff`)
+        fetch(`https://www.omdbapi.com/?s=${search}&type=movie&apikey=c26d67ff`)
           .then(res => res.json())
           .then(renderSearchResults);
     }
