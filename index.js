@@ -39,7 +39,11 @@
                 btn.classList.add('btn', 'btn-primary');
                 btn.textContent = 'Nominate';
                 btn.addEventListener('click', () => {
-                    addNomination(res[i].Title, res[i].Year, res[i].imdbID, btn);
+                    if (nominated.size === 5) {
+                        alert('Maximum number of nominations reached');
+                    } else {
+                        addNomination(res[i].Title, res[i].Year, res[i].imdbID, btn);
+                    }
                 })
 
                 btn.disabled =  nominated.has(res[i].imdbID);
