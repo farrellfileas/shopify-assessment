@@ -1,0 +1,15 @@
+.section {
+    padding: 10%;
+    background-color: lightgray
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.d-flex > div {
+    width: 49%;
+}
